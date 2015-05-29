@@ -3,14 +3,14 @@ Marvin
 Marvin is a dockerised version of Slack's [python-rtmbot](https://github.com/slackhq/python-rtmbot) with a few silly plugins to provide a bit of fun to our Slack chats.
 
 Prerequisites
-=============
+-------------
 
 1. A Slack account with a [bot user setup](https://api.slack.com/bot-users)
 2. Docker
 3. A love of Marvin Gaye
 
 Installation
-============
+------------
 
 1. Download the code
 
@@ -31,7 +31,7 @@ Installation
         docker run blackpepper/marvin
 
 Plugins
-=======
+-------
 
 Marvin has a couple of plugins configured, one for choosing an animal of the week, and one for playing music videos from youtube. It's worth noting that Marvin loves his own songs and will suggest a random Marvin Gaye track at every opportunity. He will play other songs if you request them directly though.
 
@@ -40,6 +40,6 @@ Both of the plugins are configured to only respond to direct messages or message
 Note: If you add any more plugins, don't forget to add their python dependencies to plugins/requirements.txt
 
 What's the point?
-=================
+-----------------
 
 Not much - he's just for fun really.
