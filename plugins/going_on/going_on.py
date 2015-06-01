@@ -1,15 +1,15 @@
 import time
 import random
+import os
 from apiclient.discovery import build
 
 # Set DEVELOPER_KEY to the "API key" value from the "Access" tab of the
 # Google APIs Console http://code.google.com/apis/console#access
 # Please ensure that you have enabled the YouTube Data API for your project.
-DEVELOPER_KEY = "AIzaSyDr4r7kI0rdsD8N7p1B3_WFlIR0GXcsXXw"
+DEVELOPER_KEY = os.environ.get("MARVIN_GOOGLE_API_KEY")
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
-# The id of your #random channel
-RANDOM_CHANNEL_ID = "C04U46ZT7"
+RANDOM_CHANNEL_ID = os.environ.get("MARVIN_SLACK_CHANNEL_ID")
 WHATS_GOING_ON_URL = "https://www.youtube.com/watch?v=H-kA3UtBj4M"
 outputs = []
 

@@ -4,7 +4,7 @@ import pickle
 import os
 from datetime import date
 
-RANDOM_CHANNEL_ID = "C04U46ZT7"
+RANDOM_CHANNEL_ID = os.environ.get("MARVIN_SLACK_CHANNEL_ID")
 FILE="plugins/animal.data"
 ANIMALS = ['Adelie Penguin',
            'Affenpinscher',

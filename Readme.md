@@ -17,16 +17,26 @@ Installation
         git clone git@github.com:BlackPepperSoftware/marvin
         cd marvin
 
-2. Add your bot user's token to the rtmbot.conf
+2. Specify the id of the slack channel you want Marvin to hang out in (Don't forget to invite Marvin to this channel, if it isn't your general channel)
+
+        vi Dockerfile
+          ENV MARVIN_SLACK_CHANNEL_ID=Cxxxxxxxx
+
+3. Specify your Google API developer Key that Marvin can use to search Youtube
+
+        vi Dockerfile
+          ENV MARVIN_GOOGLE_API_KEY=Axxxxxxxxxxxxxxxxxxxxxxxxxx
+
+3. Add your bot user's token to the rtmbot.conf
 
         vi rtmbot.conf
           SLACK_TOKEN: "xoxb-11111111111-222222222222222"
 
-3. Build the docker container
+4. Build the docker container
 
         docker build -t blackpepper/marvin .
 
-4. Bring Marvin to life!
+5. Bring Marvin to life!
 
         docker run blackpepper/marvin
 

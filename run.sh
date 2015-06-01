@@ -1,3 +1,4 @@
-#!/bin/sh
+#!/bin/bash
+set -e
 cd /usr/local/python-rtmbot
-./rtmbot.py
+exec ./rtmbot.py
